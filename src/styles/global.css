@@ -27,6 +27,12 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 img {
@@ -37,4 +43,19 @@ img {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  color: black;
 }

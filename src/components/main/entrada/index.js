@@ -11,7 +11,7 @@ function Entrada({ total }) {
           Entrada <FaArrowCircleUp />
         </Title>
         <Valor>
-          R$:<span>{total}</span>
+          R$:<span>{total.toFixed(2)}</span>
         </Valor>
       </EntradaBox>
     </div>

@@ -9,6 +9,7 @@ const TotalBox = styled.div`
   padding: 20px 40px;
   background-color: #f2f2f2;
   border-radius: 5px;
+  border: 3px solid ${(props) => props.$cor};
 
   @media screen and (max-width: 902px) {
     height: 80px;
@@ -30,7 +31,6 @@ const Valor = styled.div`
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color: ${(props) => props.$cor || "black"};
 `;
 
 export { TotalBox, Title, Valor };

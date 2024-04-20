@@ -11,7 +11,7 @@ function Saida({ total }) {
           Saida <FaArrowCircleDown />
         </Title>
         <Valor>
-          R$:<span>{total}</span>
+          R$:<span>{total.toFixed(2)}</span>
         </Valor>
       </SaidaBox>
     </div>

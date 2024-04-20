@@ -8,21 +8,21 @@ function Total({ total, entrada }) {
   let cor;
 
   if (porcentagem <= 10) {
-    cor = "rgb(255, 0, 0)";
-  } else if (porcentagem < 50) {
-    cor = "rgb(255, 240, 0)";
+    cor = "rgba(255, 0, 0, 0.8)";
+  } else if (porcentagem <= 50) {
+    cor = "rgba(255, 240, 0, 0.8)";
   } else {
-    cor = "black"; // Cor padrão
+    cor = "transparent";
   }
 
   return (
     <div>
-      <TotalBox>
+      <TotalBox $cor={cor}>
         <Title>
           Total <MdAttachMoney />
         </Title>
-        <Valor $cor={cor}>
-          R$:<span>{total}</span>
+        <Valor>
+          R$:<span>{total.toFixed(2)}</span>
         </Valor>
       </TotalBox>
     </div>

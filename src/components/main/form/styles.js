@@ -48,9 +48,10 @@ const Label = styled.label`
 const Input = styled.input`
   width: 100%;
   padding-left: 5px;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   border: none;
   outline: none;
+  font-size: 16px;
 `;
 
 const Btn = styled.button`
