@@ -1,4 +1,5 @@
-import { styled, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { MdDelete } from "react-icons/md";
 
 const rotate = keyframes`
   0% {
@@ -39,6 +40,9 @@ const Wrapper = styled.div`
 const Span = styled.span`
   display: flex;
   justify-content: center;
+`;
+
+const IconDelete = styled(MdDelete)`
   &:active,
   :hover {
     animation: ${rotate} 0.5s ease-in-out;
@@ -47,4 +51,4 @@ const Span = styled.span`
   }
 `;
 
-export { Container, Wrapper, Span };
+export { Container, Wrapper, Span, IconDelete };

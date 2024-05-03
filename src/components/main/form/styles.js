@@ -52,6 +52,10 @@ const Input = styled.input`
   border: none;
   outline: none;
   font-size: 16px;
+
+  @media screen and (max-width: 425px) {
+    line-height: 2.2rem;
+  }
 `;
 
 const Btn = styled.button`

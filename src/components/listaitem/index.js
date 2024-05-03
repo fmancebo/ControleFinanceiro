@@ -1,8 +1,7 @@
 import React from "react";
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 import PropTypes from "prop-types";
-import { MdDelete } from "react-icons/md";
-import { Container, Wrapper, Span } from "./styles";
+import { Container, Wrapper, Span, IconDelete } from "./styles";
 
 function ListItem({ descricao, valor, tipo, handleDelete }) {
   return (
@@ -29,7 +28,7 @@ function ListItem({ descricao, valor, tipo, handleDelete }) {
           <div>
             {descricao && valor && tipo && (
               <Span>
-                <MdDelete onClick={handleDelete} size={20} />
+                <IconDelete onClick={handleDelete} size={20} />
               </Span>
             )}
           </div>

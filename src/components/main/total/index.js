@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { MdAttachMoney } from "react-icons/md";
 import { TotalBox, Title, Valor } from "./styles";
+import currencyFormat from "../../../helper";
 
 function Total({ total, entrada }) {
   const porcentagem = (total / entrada) * 100;
@@ -22,7 +23,7 @@ function Total({ total, entrada }) {
           Total <MdAttachMoney />
         </Title>
         <Valor>
-          R$:<span>{total.toFixed(2)}</span>
+          <span>{currencyFormat(total)}</span>
         </Valor>
       </TotalBox>
     </div>

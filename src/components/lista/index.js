@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ListItem from "../listaitem";
+import currencyFormat from "../../helper";
 import { Container, Wrapper, Span } from "./styles";
 
 function List({ items = [], handleDelete }) {
@@ -20,7 +21,7 @@ function List({ items = [], handleDelete }) {
             <ListItem
               key={item.id}
               descricao={item.descricao}
-              valor={item.valor}
+              valor={currencyFormat(item.valor)}
               tipo={item.tipo}
               handleDelete={() => handleDelete(item.id)}
             />

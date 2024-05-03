@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { SaidaBox, Title, Valor } from "./styles";
+import currencyFormat from "../../../helper";
 
 function Saida({ total }) {
   return (
@@ -11,7 +12,7 @@ function Saida({ total }) {
           Saida <FaArrowCircleDown />
         </Title>
         <Valor>
-          R$:<span>{total.toFixed(2)}</span>
+          <span>{currencyFormat(total)}</span>
         </Valor>
       </SaidaBox>
     </div>

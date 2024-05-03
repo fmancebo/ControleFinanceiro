@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { EntradaBox, Title, Valor } from "./styles";
+import currencyFormat from "../../../helper";
 
 function Entrada({ total }) {
   return (
@@ -11,7 +12,7 @@ function Entrada({ total }) {
           Entrada <FaArrowCircleUp />
         </Title>
         <Valor>
-          R$:<span>{total.toFixed(2)}</span>
+          <span>{currencyFormat(total)}</span>
         </Valor>
       </EntradaBox>
     </div>
